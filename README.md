@@ -11,7 +11,7 @@ What if an engineer wants to make a brief change to tests and see if it will spe
 
 Now any engineer can experiment like that instantly. Why? Because this is a mini replica with a simple codebase. This means its easy to understand this entire codebase plus it means all test suites can run VERY FAST.
 
-To run, simply clone this repository and `npm run install`
+To run, simply clone this repository and `npm run install`<br />
 To run in headless mode, simply uncomment the line in BasePage.js
 
 This original codebase for this repository came from tutorials made by: https://www.youtube.com/playlist?list=PLA4JPGpQHctT__mDO9EHvOrWVW0Hkf5Mk All I did was expand upon those tutorials and convert it to a JS Class based Page Object Model.
