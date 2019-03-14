@@ -1,0 +1,20 @@
+{
+  "name": "codeplayground",
+  "version": "1.0.0",
+  "description": "Mini-testing ground to experiment with new code and ideas",
+  "main": "BasePage.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chromedriver": "^2.46.0",
+    "faker": "^4.1.0",
+    "jest": "^24.1.0",
+    "selenium-webdriver": "^4.0.0-alpha.1"
+  }
+}
