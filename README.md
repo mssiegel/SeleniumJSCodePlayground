@@ -2,10 +2,10 @@
 This is a mini-replica of the code used by the J.Crew QA Automation Engineering Team.
 It is a Code Playground to experiment and practice using the Page Object Model with Selenium WebdriverJS
 
-It runs tests on https://library-app.firebaseapp.com - a demo website whose source code never changes. The website was built by the Ember team to show how to build apps using Ember.
+It runs tests on https://library-app.firebaseapp.com - a demo website whose source code never changes. The website was built by the developers of the open-sourced Ember framework as an example web app that uses Ember.
 
-Why was this created:
-What if an engineer want to make a change to Base page and see its effect on codebase?
+Why was this repository created:
+What if an engineer want to make a change to Base Page and see its effect on codebase?
 What if an engineer want to make a change to a Page Object and see its effect on codebase?
 What if an engineer wants to make a brief change to tests and see if it will speed up test speed?
 
