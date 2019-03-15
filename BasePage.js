@@ -24,28 +24,27 @@ class BasePage {
     return await driver.quit()
   }
 
-  async byCss(el) {
-    return await driver.wait(until.elementLocated(By.css(el)), 15000)
+  async elementLocator(selectorType, el){
+    const element = await driver.wait(until.elementLocated(By[selectorType](el)), 15000)
+    await driver.wait(until.elementIsVisible(element), 15000)
+    return element
   }
 
-  async byXpath(el) {
-    return await driver.wait(until.elementLocated(By.xpath(el)), 15000)
+  async byCss(css) {
+    return await this.elementLocator('css', css)
+  }
+
+  async byXpath(xpath) {
+    return await this.elementLocator('xpath', xpath)
   }
 
   async byLinkText(text) {
-    return await driver.wait(until.elementLocated(By.linkText(text)), 15000)
+    return await this.elementLocator('linkText', text)
   }
 
-  async byCssAll(el) {
-    return await driver.wait(until.elementsLocated(By.css(el)), 15000);
+  async byCssAll(css) {
+    return await driver.wait(until.elementsLocated(By.css(css)), 15000);
   }
-
-  async write(el, txt) {
-    //Note: using return in the methods lets you chain them
-    const input = await this.byCss(el)
-    return await input.sendKeys(txt)
-  }
-
 
 }
 
