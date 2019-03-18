@@ -26,8 +26,7 @@ class BasePage {
 
   async elementLocator(selectorType, el){
     const element = await driver.wait(until.elementLocated(By[selectorType](el)), 15000)
-    await driver.wait(until.elementIsVisible(element), 15000)
-    return element
+    return await driver.wait(until.elementIsVisible(element), 15000)
   }
 
   async byCss(css) {

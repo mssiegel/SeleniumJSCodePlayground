@@ -6,7 +6,7 @@ describe('Library app scenarios: Library listings', () => {
   jest.setTimeout(50000)
 
   beforeEach(async () => {
-    //Note: instantiating new instance in beforeEach guarantees your class is stateless and prevcents memory leaks
+    //Note: instantiating new instance in beforeEach guarantees your class is stateless
     librariesScenarios = new Libraries()
     const navBarScenarios = new NavBar()
     librariesScenarios.createDriver()

@@ -5,7 +5,7 @@ describe('Library app scenarios: Home Page', () => {
   jest.setTimeout(50000)
 
   beforeEach(async () => {
-    //Note: instantiating new instance in beforeEach guarantees your class is stateless and prevcents memory leaks
+    //Note: instantiating new instance in beforeEach guarantees your class is stateless
     homeScenarios = new Home()
     homeScenarios.createDriver()
     await homeScenarios.visit('https://library-app.firebaseapp.com')
